@@ -132,3 +132,9 @@ def training(x_train,choose_cnn, name = "", provide_cnn = False,
         plt.savefig(plotname + 'training.png', format="png")
         plt.show()
     return cnn
+
+if __name__ == "__main__":
+    V = 0
+    psi, params = hubbard_dmrg(L=8,U=5.,V=V,chi_max=64,bc="infinite")
+    print("TenPy ran succesful!!!")  
+		
