@@ -16,6 +16,6 @@ You will have to install the following packages:
 The versions in brackets indicate with which version the code was tested.
 To check if the TenPy installation was succesful run `AD_tools.py` for a test run.
 
-The Jupyter Notebook `Bose_Hubbard.ipynb` contains all the necessary elements to draw the phase diagram along $U=5$ with $`V \in [0,5]`$.
+The Jupyter Notebook `Bose_Hubbard.ipynb` contains all the necessary elements to draw the phase diagram along $U=5$ with $$V \in [0,5]$$.
 
 The Jupyter Notebook `Bose_Hubbard.ipynb` allows to load data and plot the whole phase diagram along $U$ and $V$.
