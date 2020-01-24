@@ -8,11 +8,12 @@ The repository provides the code to generate the training data with DMRG and the
 
 You will have to install the following packages:
 
-- tensorflow
+- tensorflow (v1.13.1)
 - numpy
 - matplotlib
-- TenPy (`pip install physics-tenpy`)
+- TenPy (v0.5.0) (`pip install physics-tenpy`)
 
+The versions in brackets indicate with which version the code was tested.
 To check if the TenPy installation was succesful run `AD_tools.py` for a test run.
 
 The Jupyter Notebook `Bose_Hubbard.ipynb` contains all the necessary elements to draw the phase diagram along $U=5$ with $V \in [0,5]$.
