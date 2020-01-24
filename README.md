@@ -18,6 +18,8 @@ To check if the TenPy installation was succesful run `AD_tools.py` for a test ru
 
 The Jupyter Notebook `Bose_Hubbard.ipynb` contains all the necessary elements to draw the phase diagram along 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=U=5&space;\text{&space;with&space;}&space;V&space;\in&space;[0,5]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U=5&space;\text{&space;with&space;}&space;V&space;\in&space;[0,5]" title="U=5 \text{ with } V \in [0,5]" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=U=5&space;\text{&space;with&space;}&space;V&space;\in&space;[0,5]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U=5&space;\text{&space;with&space;}&space;V&space;\in&space;[0,5]" title="U=5 \text{ with } V \in [0,5]" /></a>.
 
-The Jupyter Notebook `Bose_Hubbard.ipynb` allows to load data and plot the whole phase diagram along $U$ and $V$.
+The Jupyter Notebook `Bose_Hubbard.ipynb` allows to load data and plot the whole phase diagram along
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=$U&space;\in&space;[0,8]$&space;\text{&space;and&space;}&space;$V&space;\in&space;[0,5]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$U&space;\in&space;[0,8]$&space;\text{&space;and&space;}&space;$V&space;\in&space;[0,5]$" title="$U \in [0,8]$ \text{ and } $V \in [0,5]$" /></a>.
