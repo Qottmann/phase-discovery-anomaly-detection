@@ -1,5 +1,7 @@
 # Unsupervised phase discovery with deep anomaly detection
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3601485.svg)](https://doi.org/10.5281/zenodo.3601485)
+
 This repository contains the code to our paper [Unsupervised phase discovery via anomaly detection](https://github.com/Qottmann/phase-discovery-anomaly-detection/edit/master/README.md), where we use deep neural networks auto encoders (AE) to find phase transitions in the one dimensional extended Bose-Hubbard model.
 
 The repository provides the code to generate the training data with DMRG and the whole training pipeline for the AE.
