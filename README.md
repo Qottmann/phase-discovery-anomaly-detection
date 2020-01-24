@@ -11,8 +11,8 @@ The repository provides the code to generate the training data with DMRG and the
 You will have to install the following packages:
 
 - tensorflow (v1.12.1)
-- numpy
-- matplotlib
+- numpy (1.17.3)
+- matplotlib (3.1.1)
 - TenPy (> v0.4.0) (`pip install physics-tenpy`)
 
 The versions in brackets indicate with which version the code was tested.
