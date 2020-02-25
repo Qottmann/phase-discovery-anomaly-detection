@@ -3,7 +3,7 @@
 """
 Created on Tue Dec 10 13:28:55 2019
 
-@author: kkottmann
+@author: Qottmann
 """
 
 import numpy as np
@@ -40,7 +40,8 @@ def hubbard_dmrg(L,U,V,init="11",t=1.,mu=0,n_max=3,conserve="N",chi_max=100,bc="
         init_config = [0,2] * int(L/2)
         init_config[where] += extra_fill
     filling = np.sum(init_config)/L
-    t0 = datetime.datetime.now()
+    t0 = datetime.datetime.now() # for time tracking
+    # define model
     model_params = dict(
         filling = filling,
         n_max = n_max,
@@ -54,6 +55,7 @@ def hubbard_dmrg(L,U,V,init="11",t=1.,mu=0,n_max=3,conserve="N",chi_max=100,bc="
         verbose=0)
     M = BoseHubbardChain(model_params)
     psi = MPS.from_product_state(M.lat.mps_sites(), init_config, bc=bc)
+    # define DMRG engine
     dmrg_params = {
         'mixer': None,
         'trunc_params': {
@@ -68,6 +70,7 @@ def hubbard_dmrg(L,U,V,init="11",t=1.,mu=0,n_max=3,conserve="N",chi_max=100,bc="
     eng.reset_stats()
     eng.trunc_params["chi_max"] = chi_max
     eng.run()
+    # collect outputs
     E = np.sum(psi.expectation_value(M.H_bond[1:]))
     print("E = {E:.13f}".format(E=E))
     #print("final bond dimensions: ", psi.chi)
@@ -83,6 +86,7 @@ def hubbard_dmrg(L,U,V,init="11",t=1.,mu=0,n_max=3,conserve="N",chi_max=100,bc="
     return psi, params
 
 def norm2(y_true,y_pred):
+    """ just the standard l2 norm, needed for evaluation """
     return np.sqrt(np.sum(np.abs(y_true - y_pred)**2))
 
 def eval_loss(x_batch,y_batch,norm=norm2):
@@ -97,7 +101,7 @@ def training(x_train,choose_cnn, name = "", provide_cnn = False,
     """
     provide_cnn is to continue the training of a cnn
     load_prev is to load a previously trained network under the same paramters
-    training:: [(Vmin,Vmax),(Umin,Umax)] for training
+    x_train provide training data
     """
         
     name_string = choose_cnn.__name__ + "_" + str(activation0) + "_" + str(activation) + "_" + str(optimizer) + "_" + name
